@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { InlineSelectModule } from './modules/inline-select/inline-select.module';
+import { SelectInlineModule } from './modules/select-inline/select-inline.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +10,7 @@ import { InlineSelectModule } from './modules/inline-select/inline-select.module
   ],
   imports: [
     BrowserModule,
-    InlineSelectModule
+    SelectInlineModule
   ],
   providers: [],
   bootstrap: [AppComponent]

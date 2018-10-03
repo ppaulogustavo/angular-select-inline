@@ -10,27 +10,29 @@ Run `npm i angular-select-inline`
 
 ## How to use
 
-Just create a list of options with name like it:
+Just create a list of options objects with name, like it:
 
-`animals = [
+```
+animals = [
     {name: 'Cat'},
     {name: 'Dog'},
     {name: 'Bird'}
-  ];`
+  ];
+```
 
 and then use the component:
 
-`
-<inline-select [label]="'Animals'" [options]="animals" [multi]="true">
-</inline-select>
-`
+```
+<select-inline [label]="'Animals'" [options]="animals" [multi]="true">
+</select-inline>
+```
 
 ## Parameters
 
-[Label]: As the name says, is the label that will be show. It is optional.
+• **label** (input): As the name says, is the label that will be showed. It is **optional**.
 
-[Options]: The array that contains all the options that can be selected.
+• **options** (input): The array that contains all the options that can be selected. It is **required**.
 
-[Multi]: This set is the user can select one or many elements.
+• **multi** (input): This set is the user can select one or many elements. It is **optional**.
 
-(OnSelect): This is triggered when one element is selected and it returns a list with the selecteds elements.
+• **selected** (output): The event that is triggered when an element is selected. It returns an array all the elements selected (can be one or more).

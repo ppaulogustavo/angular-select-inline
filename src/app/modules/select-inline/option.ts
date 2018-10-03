@@ -1,4 +1,4 @@
 export interface Option {
-    name: string,
+    name: string;
     selected?: boolean;
 }
