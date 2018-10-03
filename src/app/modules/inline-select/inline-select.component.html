@@ -1,0 +1,11 @@
+
+<label class="select-label">{{label}}</label>
+<div class="button-row">
+<button 
+    *ngFor="let option of options" 
+    mat-raised-button
+    [ngClass]="{'select-button': true, 'select-selected': option.selected}"
+    (click)="selectItem(option)">
+    {{option.name}}
+</button>
+</div>

@@ -1,0 +1,18 @@
+.select-button {
+    margin-left: 0px;
+    margin-right: 0px;
+    background: white;
+    border-color: black;
+    margin-right: 5px;
+    color: gray;
+}
+
+.select-selected {
+    background: #3c8dbc !important;
+    color: white !important;
+}
+
+.select-label {
+    display: flex;
+    margin-bottom: 5px;
+}
