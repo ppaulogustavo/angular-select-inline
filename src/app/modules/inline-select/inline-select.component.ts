@@ -10,7 +10,7 @@ import { SelectOne } from './select-one';
   templateUrl: './inline-select.component.html',
   styleUrls: ['./inline-select.component.css']
 })
-export class InlineSelectComponent implements AfterViewInit {
+export class InlineSelectComponent implements OnInit {
   @Input('label') label: string;
   @Input('options') options: Option[];
   @Input('multi') multi: boolean;
@@ -20,7 +20,7 @@ export class InlineSelectComponent implements AfterViewInit {
 
   constructor() { }
 
-  ngAfterViewInit() {
+  ngOnInit() {
     this.select = this.multi ? new SelectMulti() : new SelectOne();    
   }
 

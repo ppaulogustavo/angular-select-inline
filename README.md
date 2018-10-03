@@ -1,27 +1,36 @@
-# SelectInline
+# Angular Select Inline
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
+The motivation to this project was to improve the user experience with small selects
 
-## Development server
+[Demo](https://stackblitz.com/edit/angular-select-inline)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## How to install
 
-## Code scaffolding
+Run `npm i angular-select-inline`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## How to use
 
-## Build
+Just create a list of options with name like it:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+`animals = [
+    {name: 'Cat'},
+    {name: 'Dog'},
+    {name: 'Bird'}
+  ];`
 
-## Running unit tests
+and then use the component:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`
+<inline-select [label]="'Animals'" [options]="animals" [multi]="true">
+</inline-select>
+`
 
-## Running end-to-end tests
+## Parameters
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+[Label]: As the name says, is the label that will be show. It is optional.
 
-## Further help
+[Options]: The array that contains all the options that can be selected.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+[Multi]: This set is the user can select one or many elements.
+
+(OnSelect): This is triggered when one element is selected and it returns a list with the selecteds elements.
