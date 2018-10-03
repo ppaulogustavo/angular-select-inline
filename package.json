@@ -1,7 +1,11 @@
 {
   "name": "angular-select-inline",
-  "version": "0.2.2",
+  "version": "1.0.0",
   "homepage": "https://github.com/ppaulogustavo/angular-select-inline",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ppaulogustavo/angular-select-inline"
+  },
   "author": {
     "name": "Paulo Gustavo de Souza",
     "email": "ppaulogustavo@gmail.com"
