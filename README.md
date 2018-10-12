@@ -33,6 +33,6 @@ and then use the component:
 
 • **options** (input): The array that contains all the options that can be selected. It is **required**.
 
-• **multi** (input): This set is the user can select one or many elements. It is **optional**.
+• **multi** (input): This option enables if the user can select one or more options. It is **optional**.
 
 • **selected** (output): The event that is triggered when an element is selected. It returns an array all the elements selected (can be one or more).
