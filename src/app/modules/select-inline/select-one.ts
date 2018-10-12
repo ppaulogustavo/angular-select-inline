@@ -4,8 +4,9 @@ import { Option } from './option';
 export class SelectOne implements InlineSelect {
 
     toggleOption(selectedOption: Option, options: Option[]): void {
-        options.forEach(option => option.selected = false);
-        selectedOption.selected = true;
+        selectedOption.selected = !selectedOption.selected;
+        options.filter(option => option.name != selectedOption.name)
+            .forEach(option => option.selected = false);
     }
 
 }

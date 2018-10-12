@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'select-inline';
+
+  animals = [
+    {name: 'Cat'},
+    {name: 'Dog'},
+    {name: 'Bird'}
+  ];
+
+  onSelect($event) {
+    let values = $event.map(option => option.selected);
+    console.log(values)
+  }
 }
