@@ -25,10 +25,10 @@ export class SelectInlineComponent implements OnInit {
 
   selectItem(selectedOption: Option): void {
     this.select.toggleOption(selectedOption, this.options);
-    this.selected.emit(this.getSelecteds());
+    this.selected.emit(this.getSelected());
   }
 
-  private getSelecteds() {
+  private getSelected() {
     return this.options.filter(option => option.selected);
   }
 }
